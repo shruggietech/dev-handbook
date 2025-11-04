@@ -1,0 +1,20 @@
+# Static Website - .gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build (if using build tools)
+dist/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
