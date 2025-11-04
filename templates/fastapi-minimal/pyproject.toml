@@ -1,0 +1,14 @@
+[project]
+name = "fastapi-minimal"
+version = "0.1.0"
+description = "Hello-world FastAPI app"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["fastapi", "uvicorn[standard]"]
+
+[project.scripts]
+serve = "app.main:serve"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
