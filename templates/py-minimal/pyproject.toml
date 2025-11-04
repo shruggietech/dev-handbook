@@ -1,0 +1,11 @@
+[project]
+name = "example"
+version = "0.1.0"
+description = "Minimal Python package template"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
