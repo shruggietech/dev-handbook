@@ -1,6 +1,6 @@
 # ShruggieTech Dev Handbook
 
-Welcome. Use the sidebar to navigate.
+Welcome. This repository contains docs, scripts, and starter templates for ShruggieTech projects.
 
 - [Python Project Playbook](playbooks/python-projects.md)
 - [Git Usage](playbooks/git-usage.md)
