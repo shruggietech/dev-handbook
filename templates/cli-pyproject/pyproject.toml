@@ -1,0 +1,14 @@
+[project]
+name = "cli-app"
+version = "0.1.0"
+description = "Console-script template"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+cli-app = "cli_app.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
