@@ -1,0 +1,40 @@
+name: Build and Release Template ZIPs
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'templates/**'
+      - '.github/workflows/build-templates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # allows creating/updating releases
+
+jobs:
+  zip-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Zip templates
+        run: |
+          mkdir -p dist/templates
+          for d in templates/*/; do
+            base=$(basename "$d")
+            echo "Packaging $base..."
+            (cd "$d" && zip -r "../../dist/templates/${base}.zip" . -x "*/.venv/*" >/dev/null)
+          done
+          ls -lah dist/templates
+
+      - name: Create GitHub Release (latest)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest-templates
+          name: Latest Templates
+          draft: false
+          prerelease: false
+          files: dist/templates/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
