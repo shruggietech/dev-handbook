@@ -13,7 +13,6 @@
 .LINK
     https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 #>
-
 [CmdletBinding(SupportsShouldProcess=$true,ConfirmImpact='None',DefaultParameterSetName='Default')]
 Param(
     [Parameter(Mandatory=$true,ParameterSetName='HelpText')]

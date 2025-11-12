@@ -49,9 +49,10 @@
         "editor.cursorWidth": 2,
         "editor.cursorSurroundingLines": 3,
         "editor.cursorSurroundingLinesStyle": "default",
-        "editor.hover.delay": 3000,
-        "workbench.hover.delay": 3000,
-        "workbench.sash.hoverDelay": 2000,
+        "editor.hover.delay": 1500,
+        "workbench.hover.delay": 1500,
+        "workbench.sash.hoverDelay": 1500,
+        "files.trimTrailingWhitespace": true,
         "inlineChat.lineEmptyHint": false,
         "json.format.enable": true,
         "json.validate.enable": true,
@@ -72,6 +73,17 @@
                 "url": "https://cdn.h8rt3rmin8r.com/schemas/MakeIndex.meta.json"
             }
         ],
+        // Disable markdownlint rule MD033
+        // (This rule flags inline HTML or certain special characters in Markdown)
+        "markdownlint.config": {
+            "MD033": false
+        },
+        // Make Markdown previews more accurate
+        "markdown.preview.typographer": true,
+        "markdown.preview.breaks": true,
+        // (optional) Disable Markdown diagnostics that cause the annoying squiggle of doom (sometimes)
+        "markdown.validate.enabled": false,
+        // Language-specific settings
         "[powershell]": {
             "editor.defaultFormatter": "ms-vscode.powershell"
         },

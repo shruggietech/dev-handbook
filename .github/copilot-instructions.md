@@ -84,9 +84,9 @@ On a side note, one of the original creators of PowerShell publicly complained a
 
 All non-Powershell scripts should include an appropriate shebang line at the top of the file:
 
-- Bash: `#!/usr/bin/env bash`
-- Python: `#!/usr/bin/env python3`
-- Node.js: `#!/usr/bin/env node`
+- Bash: # + ! + `/usr/bin/env bash`
+- Python: # + ! + `/usr/bin/env python3`
+- Node.js: # + ! + `/usr/bin/env node`
 - etc.
 
 Important Note: Never include a shebang line in Powershell scripts. Doing so will prevent the script from behaving correctly in Windows environments.
@@ -111,10 +111,9 @@ All scripts and functions should closely adhere to the following general structu
 
 ### Comprehensive ReadMe
 
-Example comment-based help block for Powershell:
+Example comment-based help block for Powershell scripts and functions:
 
-```powershell
-<#
+```text
 .SYNOPSIS
     A brief summary of the function's purpose.
 .DESCRIPTION
@@ -124,8 +123,7 @@ Example comment-based help block for Powershell:
 .EXAMPLE
     A practical example of how to use the function.
 .LINK
-    [example.com](https://example.com/)
-#>
+    [Markdown link to external references or related documentation]
 ```
 
 - When writing any Powershell script (or function or sub-function), always include a full comment-based help block at the very beginning of the file and before the internal logic of each function.
