@@ -1,0 +1,4 @@
+# Disable Jekyll on GitHub Pages so files and folders
+# that start with an underscore (e.g. _sidebar.md, _navbar.md)
+# are served correctly.
+
