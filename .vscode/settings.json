@@ -1,0 +1,12 @@
+{
+    // Disable markdownlint rule MD033
+    // (This rule flags inline HTML or certain special characters in Markdown)
+    "markdownlint.config": {
+        "MD033": false
+    },
+    // Make Markdown previews more accurate
+    "markdown.preview.typographer": true,
+    "markdown.preview.breaks": true,
+    // (optional) Disable Markdown diagnostics that cause the annoying squiggle of doom
+    "markdown.validate.enabled": false
+}

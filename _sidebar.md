@@ -1,0 +1,11 @@
+- [Home](docs/index.md)
+- Playbooks
+  - [Git Usage](docs/playbooks/git-usage.md)
+  - [Python Projects](docs/playbooks/python-projects.md)
+- Scripts
+  - [Overview](docs/scripts/overview.md)
+  - [PowerShell](docs/scripts/powershell.md)
+  - [Bash](docs/scripts/bash.md)
+  - [Python](docs/scripts/python.md)
+- Templates
+  - [Catalog](docs/templates/catalog.md)
