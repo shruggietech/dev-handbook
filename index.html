@@ -27,8 +27,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <!-- Docsify -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
+    <!-- Docsify Dark/Light Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/css/style.min.css" title="docsify-darklight-theme">
 </head>
 <body>
     <div id="app"></div>
@@ -43,9 +43,25 @@
             relativePath: true,
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md'
+            },
+            darklightTheme: {
+                defaultTheme: 'dark',
+                light: {
+                    accent: '#0b5cff',
+                    toogleBackground: '#ffffff',
+                    background: '#ffffff',
+                    textColor: '#1a1a1a'
+                },
+                dark: {
+                    accent: '#62a8ff',
+                    toogleBackground: '#1a1a1a',
+                    background: '#0f1115',
+                    textColor: '#f1f1f1'
+                }
             }
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/js/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
 </body>
 </html>
