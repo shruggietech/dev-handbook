@@ -26,7 +26,7 @@ $thisSubFunction = "{0}" -f $MyInvocation.MyCommand
 $thisFunction = if ($null -eq $thisFunction) { $thisSubFunction } else { -join("$thisFunction", ":", "$thisSubFunction") }
 
 # Catch Help Text Requests
-if ($Help) {
+if (($Help) -or ($PSCmdlet.ParameterSetName -eq 'HelpText')) {
     Get-Help -Name $MyInvocation.MyCommand.Path -Full
     Exit 0
 }
