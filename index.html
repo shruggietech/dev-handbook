@@ -28,20 +28,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <!-- Docsify -->
-    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
 </head>
 <body>
     <div id="app"></div>
     <script>
         window.$docsify = {
             name: 'ShruggieTech Dev Handbook',
-            loadSidebar: true,
+            loadSidebar: '_sidebar.md',
             subMaxLevel: 2,
             auto2top: true,
             basePath: 'docs/',
-            homepage: 'index.md'
+            homepage: 'index.md',
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            }
         }
     </script>
-    <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
 </body>
 </html>
