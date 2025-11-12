@@ -15,8 +15,8 @@ Before diving into Git usage, set these configurations to avoid common pitfalls 
 
 **Automated Setup:**
 
-- **Bash:** Run `scripts/bash/setup-git-config.sh` (see [Bash Scripts](../scripts/bash.md))
-- **PowerShell:** Run `scripts/powershell/Setup-GitConfig.ps1` (see [PowerShell Scripts](../scripts/powershell.md))
+- **Bash:** Run `scripts/bash/setup-git-config.sh` (see [Bash Scripts](#/scripts/bash))
+- **PowerShell:** Run `scripts/powershell/Setup-GitConfig.ps1` (see [PowerShell Scripts](#/scripts/powershell))
 
 **Manual Configuration:**
 
